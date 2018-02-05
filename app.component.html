@@ -1,0 +1,8 @@
+<h1>{{ title }}</h1>
+<agm-map [latitude]="lat" [longitude]="lng" (mapClick)="mapClicked($event.coords)" (setAddress)="centerChanged($event)">
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  <agm-info-window>Börk</agm-info-window>
+</agm-map>
+
+<p> longitite: {{lng}}</p>
+<p>latitude:{{lat}}</p> 
